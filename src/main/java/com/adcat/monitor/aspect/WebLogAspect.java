@@ -59,7 +59,7 @@ public class WebLogAspect {
     public void doAfterReturning(Object ret) throws Throwable {
         // 处理完请求，返回内容
         log.info("RESPONSE : " + ret);
-        log.info("SPEND TIME : " + (System.currentTimeMillis() - startTime.get()));
+        log.info("SPEND TIME : " + (System.currentTimeMillis() - startTime.get()) + " ms");
     }
 
     //使用@After在切入点结尾处切入内容
