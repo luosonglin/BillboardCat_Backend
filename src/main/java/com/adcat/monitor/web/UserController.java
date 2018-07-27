@@ -31,4 +31,17 @@ public class UserController {
         return userMapper.findById(id);
     }
 
+    @PostMapping(value = "")
+    public User addUser(@RequestParam String phone, @RequestParam String code, @RequestParam int type) throws Exception {
+
+        User user = new User();
+        user.setPhoneNum(phone);
+        user.setGroupid(type);
+        user.setFirstEntryTime(new Date(System.currentTimeMillis()));
+
+        userMapper.insertUser(user);
+
+        return userMapper.findByPhone(phone);
+    }
+
 }
