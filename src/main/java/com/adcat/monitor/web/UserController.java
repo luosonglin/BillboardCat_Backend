@@ -2,6 +2,7 @@ package com.adcat.monitor.web;
 
 import com.adcat.monitor.domain.User;
 import com.adcat.monitor.domain.UserTest;
+import com.adcat.monitor.exception.JsonException;
 import com.adcat.monitor.mapper.UserMapper;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,6 +48,28 @@ public class UserController {
         userMapper.insertUser(user);
 
         return userMapper.findByPhone(phone);
+    }
+
+    @PutMapping(value = "/{id}")
+    public User update(@RequestBody User user) throws Exception {
+        if (userMapper.isExist(user.getPhoneNum()) == null)
+            throw new JsonException("该用户不存在");
+
+        User user2 = userMapper.findByPhone(user.getPhoneNum());
+        user2.setProperty(user.getProperty());
+        //user2.setGroupid(user.getGroupid()); //该字段很重要，暂时不提供修改
+        user2.setName(user.getName());
+
+        user2.setProvince(user.getProvince());
+        user2.setCity(user.getCity());
+        user2.setCounty(user.getCounty());
+
+        user2.setLastModifyTime(new Date(System.currentTimeMillis()));
+        user2.setAvatar(user.getAvatar());
+
+        userMapper.update(user2);
+
+        return userMapper.findByPhone(user.getPhoneNum());
     }
 
 }
