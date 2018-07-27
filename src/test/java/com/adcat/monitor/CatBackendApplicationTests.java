@@ -1,10 +1,10 @@
 package com.adcat.monitor;
 
-import com.adcat.monitor.domain.User;
-import com.adcat.monitor.domain.UserMapper;
+import com.adcat.monitor.domain.UserTest;
+import com.adcat.monitor.domain.UserMapperTest;
 import com.adcat.monitor.service.BlogProperties;
 import com.adcat.monitor.web.HelloController;
-import com.adcat.monitor.web.UserController;
+import com.adcat.monitor.web.UserControllerTest;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.junit.Assert;
@@ -62,7 +62,7 @@ public class CatBackendApplicationTests {
     public void setUp() throws Exception {
         mvc = MockMvcBuilders.standaloneSetup(
                 new HelloController(),
-                new UserController()).build();
+                new UserControllerTest()).build();
     }
 
     @Test
@@ -124,13 +124,13 @@ public class CatBackendApplicationTests {
 
 
     @Autowired
-    private UserMapper userMapper;
+    private UserMapperTest userMapper;
 
     @Test
     @Rollback
     public void findByName() throws Exception {
         userMapper.insert("罗崧麟", 20);
-        User u = userMapper.findByName("罗崧麟");
+        UserTest u = userMapper.findByName("罗崧麟");
         Assert.assertEquals(20, u.getAge().intValue());
     }
 

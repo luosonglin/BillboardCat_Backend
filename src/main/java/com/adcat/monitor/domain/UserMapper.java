@@ -1,16 +1,12 @@
 package com.adcat.monitor.domain;
 
-import org.apache.ibatis.annotations.*;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Param;
+import org.apache.ibatis.annotations.Select;
 
 @Mapper
 public interface UserMapper {
 
-    @Select("SELECT * FROM USER WHERE NAME = #{name}")
-    User findByName(@Param("name") String name);
-
-    @Insert("INSERT INTO USER(NAME, AGE) VALUES(#{name}, #{age})")
-    int insert(@Param("name") String name, @Param("age") Integer age);
-
-    @Delete("delete from user where id=#{id}")
-    void delete(@Param("id") long id);
+    @Select("SELECT * FROM bmct_um_ui WHERE user_id = #{userId}")
+    User findById(@Param("userId") Long userId);
 }
