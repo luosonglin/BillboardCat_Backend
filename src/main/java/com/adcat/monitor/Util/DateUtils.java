@@ -1,6 +1,5 @@
-package com.medmeeting.m.zhiyi.Util;
+package com.adcat.monitor.Util;
 
-import android.annotation.SuppressLint;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -23,7 +22,6 @@ public class DateUtils {
     public DateUtils() {
     }
 
-    @SuppressLint("SimpleDateFormat")
     public static String formatDate(long time, String format) {
         Calendar cal = Calendar.getInstance();
         cal.setTimeInMillis(time);
@@ -39,7 +37,7 @@ public class DateUtils {
     }
 
     public static long formatStr(String timeStr, String pattern) {
-        @SuppressLint("SimpleDateFormat") SimpleDateFormat sdf = new SimpleDateFormat(pattern);
+        SimpleDateFormat sdf = new SimpleDateFormat(pattern);
 
         try {
             return sdf.parse(timeStr).getTime();
@@ -55,7 +53,7 @@ public class DateUtils {
     // strTime的时间格式必须要与formatType的时间格式相同
     public static Date stringToDate(String strTime, String formatType)
             throws ParseException {
-        @SuppressLint("SimpleDateFormat") SimpleDateFormat formatter = new SimpleDateFormat(formatType);
+        SimpleDateFormat formatter = new SimpleDateFormat(formatType);
         Date date = null;
         date = formatter.parse(strTime);
         return date;

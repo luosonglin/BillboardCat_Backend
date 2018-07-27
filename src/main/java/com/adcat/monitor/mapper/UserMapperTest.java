@@ -1,5 +1,6 @@
-package com.adcat.monitor.domain;
+package com.adcat.monitor.mapper;
 
+import com.adcat.monitor.domain.UserTest;
 import org.apache.ibatis.annotations.*;
 
 @Mapper

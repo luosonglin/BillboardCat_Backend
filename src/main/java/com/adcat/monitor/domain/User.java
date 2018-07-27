@@ -1,6 +1,8 @@
 package com.adcat.monitor.domain;
 
 
+import com.adcat.monitor.Util.DateUtils;
+
 import java.util.Date;
 
 public class User {
@@ -21,7 +23,7 @@ public class User {
     private  int groupid = 1;
 
     //手机
-    private  String phoneNum = "";
+    private  String phoneNum;
 
     //关注区域
     private  String concernArea;

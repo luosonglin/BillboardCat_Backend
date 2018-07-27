@@ -1,7 +1,7 @@
 package com.adcat.monitor;
 
 import com.adcat.monitor.domain.UserTest;
-import com.adcat.monitor.domain.UserMapperTest;
+import com.adcat.monitor.mapper.UserMapperTest;
 import com.adcat.monitor.service.BlogProperties;
 import com.adcat.monitor.web.HelloController;
 import com.adcat.monitor.web.UserControllerTest;

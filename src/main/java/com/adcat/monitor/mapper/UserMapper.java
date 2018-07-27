@@ -1,5 +1,6 @@
-package com.adcat.monitor.domain;
+package com.adcat.monitor.mapper;
 
+import com.adcat.monitor.domain.User;
 import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
@@ -14,8 +15,11 @@ public interface UserMapper {
     @Select("SELECT * FROM bmct_um_ui WHERE phone_num = #{phone_num}")
     User findByPhone(@Param("phone_num") String phone);
 
-    @Insert("INSERT INTO `bmct_um_ui` (`user_id`, `property`, `password`, `name`, `groupid`, `phone_num`, `concern_area`, `status`, `user_status`, `province`, `city`, `county`, `first_entry_time`, `last_modify_time`, `media_status`, `avatar`)\n" +
+    @Insert("INSERT INTO `bmct_um_ui` (`name`, `groupid`, `phone_num`, `first_entry_time`)\n" +
             "VALUES" +
-            "(#{user_id},#{property},#{password},#{name},#{groupid},#{phone_num},#{concern_area},#{status},#{user_status},#{province},#{city},#{county},#{first_entry_time},#{last_modify_time},#{media_status},#{avatar})")
+            "(#{name},#{groupid},#{phoneNum},#{firstEntryTime})")
     int insertUser(User user);
+
+    @Select("select 1 from bmct_um_ui where phone_num = #{phone_num} limit 1")
+    Object isExist(@Param("phone_num") String phone);
 }
