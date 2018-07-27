@@ -4867,3 +4867,327 @@ com.mysql.jdbc.exceptions.jdbc4.MySQLSyntaxErrorException: Table 'bmonitorcat.us
 2018-07-27 17:40:38.901  INFO 30558 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
 2018-07-27 17:40:38.991  INFO 30558 --- [http-nio-8080-exec-1] com.adcat.monitor.aspect.WebLogAspect    : RESPONSE : com.adcat.monitor.domain.User@150ef84
 2018-07-27 17:40:38.991  INFO 30558 --- [http-nio-8080-exec-1] com.adcat.monitor.aspect.WebLogAspect    : SPEND TIME : 413 ms
+2018-07-27 18:09:17.620  INFO 30558 --- [Thread-17] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1a957b57: startup date [Fri Jul 27 17:40:23 CST 2018]; root of context hierarchy
+2018-07-27 18:09:17.624  INFO 30558 --- [Thread-17] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-07-27 18:09:17.625  INFO 30558 --- [Thread-17] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-07-27 18:09:17.627  INFO 30558 --- [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-07-27 18:09:17.633  INFO 30558 --- [Thread-17] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2018-07-27 18:09:20.794  INFO 30668 --- [restartedMain] com.adcat.monitor.CatBackendApplication  : Starting CatBackendApplication on luosonglindeMacBook-Pro.local with PID 30668 (/Users/luosonglin/IdeaProjects/zhaopai/target/classes started by luosonglin in /Users/luosonglin/IdeaProjects/zhaopai)
+2018-07-27 18:09:20.798  INFO 30668 --- [restartedMain] com.adcat.monitor.CatBackendApplication  : The following profiles are active: dev
+2018-07-27 18:09:20.858  INFO 30668 --- [restartedMain] ConfigServletWebServerApplicationContext : Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1f72919f: startup date [Fri Jul 27 18:09:20 CST 2018]; root of context hierarchy
+2018-07-27 18:09:22.060  INFO 30668 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6ab11d72] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-07-27 18:09:22.430  INFO 30668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2018-07-27 18:09:22.444  INFO 30668 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-07-27 18:09:22.444  INFO 30668 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.31
+2018-07-27 18:09:22.446  INFO 30668 --- [localhost-startStop-1] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/luosonglin/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2018-07-27 18:09:22.492  INFO 30668 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-07-27 18:09:22.492  INFO 30668 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1634 ms
+2018-07-27 18:09:22.596  INFO 30668 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2018-07-27 18:09:22.598  INFO 30668 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-07-27 18:09:22.598  INFO 30668 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-07-27 18:09:22.598  INFO 30668 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-07-27 18:09:22.599  INFO 30668 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-07-27 18:09:23.168  INFO 30668 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/]}" onto public java.lang.String com.adcat.monitor.web.HelloController.index(org.springframework.ui.ModelMap)
+2018-07-27 18:09:23.169  INFO 30668 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/json]}" onto public java.lang.String com.adcat.monitor.web.HelloController.json() throws java.lang.Exception
+2018-07-27 18:09:23.170  INFO 30668 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/json2]}" onto public java.lang.String com.adcat.monitor.web.HelloController.json2() throws com.adcat.monitor.exception.JsonException
+2018-07-27 18:09:23.170  INFO 30668 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public java.lang.String com.adcat.monitor.web.HelloController.hello()
+2018-07-27 18:09:23.172  INFO 30668 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/media],methods=[GET]}" onto public java.util.List<com.adcat.monitor.domain.Media> com.adcat.monitor.web.MediaController.getAllMedia() throws java.lang.Exception
+2018-07-27 18:09:23.172  INFO 30668 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/media/{id}],methods=[GET]}" onto public com.adcat.monitor.domain.Media com.adcat.monitor.web.MediaController.getDetail(long) throws java.lang.Exception
+2018-07-27 18:09:23.174  INFO 30668 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/user/{id}],methods=[PUT]}" onto public com.adcat.monitor.domain.User com.adcat.monitor.web.UserController.update(com.adcat.monitor.domain.User) throws java.lang.Exception
+2018-07-27 18:09:23.175  INFO 30668 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/user/{id}],methods=[GET]}" onto public com.adcat.monitor.domain.User com.adcat.monitor.web.UserController.getUser(java.lang.Long) throws java.lang.Exception
+2018-07-27 18:09:23.175  INFO 30668 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v1/user],methods=[POST]}" onto public com.adcat.monitor.domain.User com.adcat.monitor.web.UserController.login(java.lang.String,java.lang.String,int) throws java.lang.Exception
+2018-07-27 18:09:23.176  INFO 30668 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/],methods=[POST]}" onto public java.lang.String com.adcat.monitor.web.UserControllerTest.postUser(com.adcat.monitor.domain.UserTest)
+2018-07-27 18:09:23.177  INFO 30668 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[PUT]}" onto public java.lang.String com.adcat.monitor.web.UserControllerTest.putUser(java.lang.Long,com.adcat.monitor.domain.UserTest)
+2018-07-27 18:09:23.177  INFO 30668 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/],methods=[GET]}" onto public java.util.List<com.adcat.monitor.domain.UserTest> com.adcat.monitor.web.UserControllerTest.getUserList()
+2018-07-27 18:09:23.177  INFO 30668 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[DELETE]}" onto public java.lang.String com.adcat.monitor.web.UserControllerTest.deleteUser(java.lang.Long)
+2018-07-27 18:09:23.178  INFO 30668 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/users/{id}],methods=[GET]}" onto public com.adcat.monitor.domain.UserTest com.adcat.monitor.web.UserControllerTest.getUser(java.lang.Long)
+2018-07-27 18:09:23.178  INFO 30668 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/v2/api-docs],methods=[GET]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String)
+2018-07-27 18:09:23.181  INFO 30668 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/security]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2018-07-27 18:09:23.181  INFO 30668 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/configuration/ui]}" onto org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2018-07-27 18:09:23.181  INFO 30668 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/swagger-resources]}" onto org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2018-07-27 18:09:23.183  INFO 30668 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-07-27 18:09:23.184  INFO 30668 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-07-27 18:09:23.313  INFO 30668 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-27 18:09:23.468  INFO 30668 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@1f72919f: startup date [Fri Jul 27 18:09:20 CST 2018]; root of context hierarchy
+2018-07-27 18:09:23.515  INFO 30668 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-27 18:09:23.516  INFO 30668 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-07-27 18:09:23.532  INFO 30668 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in globalExceptionHandler
+2018-07-27 18:09:23.566  WARN 30668 --- [restartedMain] org.thymeleaf.templatemode.TemplateMode  : [THYMELEAF][restartedMain] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+2018-07-27 18:09:23.604  INFO 30668 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2018-07-27 18:09:23.895  INFO 30668 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2018-07-27 18:09:23.921  INFO 30668 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-07-27 18:09:23.923  INFO 30668 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'dataSource' has been autodetected for JMX exposure
+2018-07-27 18:09:23.928  INFO 30668 --- [restartedMain] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2018-07-27 18:09:23.938  INFO 30668 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2018-07-27 18:09:23.948  INFO 30668 --- [restartedMain] d.s.w.p.DocumentationPluginsBootstrapper : Found {0} custom documentation plugin(s)
+2018-07-27 18:09:23.954  INFO 30668 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2018-07-27 18:09:23.956  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-07-27 18:09:23.957  INFO 30668 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: index belongs to groups: [[ResourceGroup{groupName='hello-controller', position=0, controller=com.adcat.monitor.web.HelloController}]] 
+2018-07-27 18:09:23.958  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was hello-controller
+2018-07-27 18:09:23.958  INFO 30668 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: hello belongs to groups: [[ResourceGroup{groupName='hello-controller', position=0, controller=com.adcat.monitor.web.HelloController}]] 
+2018-07-27 18:09:23.958  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json2 was hello-controller
+2018-07-27 18:09:23.958  INFO 30668 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: json2 belongs to groups: [[ResourceGroup{groupName='hello-controller', position=0, controller=com.adcat.monitor.web.HelloController}]] 
+2018-07-27 18:09:23.959  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json was hello-controller
+2018-07-27 18:09:23.959  INFO 30668 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: json belongs to groups: [[ResourceGroup{groupName='hello-controller', position=0, controller=com.adcat.monitor.web.HelloController}]] 
+2018-07-27 18:09:23.960  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getDetail was 媒体
+2018-07-27 18:09:23.960  INFO 30668 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getDetail belongs to groups: [[ResourceGroup{groupName='媒体', position=0, controller=com.adcat.monitor.web.MediaController}]] 
+2018-07-27 18:09:23.961  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getAllMedia was 媒体
+2018-07-27 18:09:23.961  INFO 30668 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getAllMedia belongs to groups: [[ResourceGroup{groupName='媒体', position=0, controller=com.adcat.monitor.web.MediaController}]] 
+2018-07-27 18:09:23.961  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method postUser was user-controller-test
+2018-07-27 18:09:23.961  INFO 30668 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: postUser belongs to groups: [[ResourceGroup{groupName='user-controller-test', position=0, controller=com.adcat.monitor.web.UserControllerTest}]] 
+2018-07-27 18:09:23.962  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUserList was user-controller-test
+2018-07-27 18:09:23.962  INFO 30668 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getUserList belongs to groups: [[ResourceGroup{groupName='user-controller-test', position=0, controller=com.adcat.monitor.web.UserControllerTest}]] 
+2018-07-27 18:09:23.962  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method putUser was user-controller-test
+2018-07-27 18:09:23.962  INFO 30668 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: putUser belongs to groups: [[ResourceGroup{groupName='user-controller-test', position=0, controller=com.adcat.monitor.web.UserControllerTest}]] 
+2018-07-27 18:09:23.963  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteUser was user-controller-test
+2018-07-27 18:09:23.963  INFO 30668 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: deleteUser belongs to groups: [[ResourceGroup{groupName='user-controller-test', position=0, controller=com.adcat.monitor.web.UserControllerTest}]] 
+2018-07-27 18:09:23.963  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller-test
+2018-07-27 18:09:23.963  INFO 30668 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getUser belongs to groups: [[ResourceGroup{groupName='user-controller-test', position=0, controller=com.adcat.monitor.web.UserControllerTest}]] 
+2018-07-27 18:09:23.963  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method update was 个人
+2018-07-27 18:09:23.964  INFO 30668 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: update belongs to groups: [[ResourceGroup{groupName='个人', position=0, controller=com.adcat.monitor.web.UserController}]] 
+2018-07-27 18:09:23.964  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was 个人
+2018-07-27 18:09:23.964  INFO 30668 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: getUser belongs to groups: [[ResourceGroup{groupName='个人', position=0, controller=com.adcat.monitor.web.UserController}]] 
+2018-07-27 18:09:23.964  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method login was 个人
+2018-07-27 18:09:23.964  INFO 30668 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Request mapping: login belongs to groups: [[ResourceGroup{groupName='个人', position=0, controller=com.adcat.monitor.web.UserController}]] 
+2018-07-27 18:09:23.967  INFO 30668 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/hello-controller Description: hello-controller Position: 0
+2018-07-27 18:09:23.968  INFO 30668 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/个人 Description: 个人 Position: 0
+2018-07-27 18:09:23.968  INFO 30668 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/user-controller-test Description: user-controller-test Position: 0
+2018-07-27 18:09:23.968  INFO 30668 --- [restartedMain] s.d.s.w.s.ApiListingReferenceScanner     : Created resource listing Path: /default/媒体 Description: 媒体 Position: 0
+2018-07-27 18:09:23.981  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-07-27 18:09:23.982  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-07-27 18:09:23.984  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-07-27 18:09:23.984  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-07-27 18:09:23.988  INFO 30668 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /hello.com.adcat.monitor.web.HelloController.hello.DefaultGenericTypeNamingStrategy
+2018-07-27 18:09:23.988  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /hello.com.adcat.monitor.web.HelloController.hello.DefaultGenericTypeNamingStrategy
+2018-07-27 18:09:23.995  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was hello-controller
+2018-07-27 18:09:23.997  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was hello-controller
+2018-07-27 18:09:23.999  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was hello-controller
+2018-07-27 18:09:23.999  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was hello-controller
+2018-07-27 18:09:24.000  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was hello-controller
+2018-07-27 18:09:24.000  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was hello-controller
+2018-07-27 18:09:24.001  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was hello-controller
+2018-07-27 18:09:24.001  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was hello-controller
+2018-07-27 18:09:24.002  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was hello-controller
+2018-07-27 18:09:24.003  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was hello-controller
+2018-07-27 18:09:24.003  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was hello-controller
+2018-07-27 18:09:24.004  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was hello-controller
+2018-07-27 18:09:24.005  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was hello-controller
+2018-07-27 18:09:24.005  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was hello-controller
+2018-07-27 18:09:24.006  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was hello-controller
+2018-07-27 18:09:24.006  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method hello was hello-controller
+2018-07-27 18:09:24.009  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-07-27 18:09:24.009  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-07-27 18:09:24.010  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-07-27 18:09:24.010  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-07-27 18:09:24.010  INFO 30668 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /.com.adcat.monitor.web.HelloController.index.DefaultGenericTypeNamingStrategy
+2018-07-27 18:09:24.010  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /.com.adcat.monitor.web.HelloController.index.DefaultGenericTypeNamingStrategy
+2018-07-27 18:09:24.014  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-07-27 18:09:24.014  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-07-27 18:09:24.015  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-07-27 18:09:24.016  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-07-27 18:09:24.017  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-07-27 18:09:24.017  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-07-27 18:09:24.018  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-07-27 18:09:24.019  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-07-27 18:09:24.020  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-07-27 18:09:24.021  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-07-27 18:09:24.021  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-07-27 18:09:24.022  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-07-27 18:09:24.022  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-07-27 18:09:24.023  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-07-27 18:09:24.024  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-07-27 18:09:24.024  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method index was hello-controller
+2018-07-27 18:09:24.025  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-07-27 18:09:24.025  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-07-27 18:09:24.025  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-07-27 18:09:24.025  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-07-27 18:09:24.025  INFO 30668 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /json.com.adcat.monitor.web.HelloController.json.DefaultGenericTypeNamingStrategy
+2018-07-27 18:09:24.025  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /json.com.adcat.monitor.web.HelloController.json.DefaultGenericTypeNamingStrategy
+2018-07-27 18:09:24.026  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json was hello-controller
+2018-07-27 18:09:24.026  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json was hello-controller
+2018-07-27 18:09:24.027  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json was hello-controller
+2018-07-27 18:09:24.027  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json was hello-controller
+2018-07-27 18:09:24.027  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json was hello-controller
+2018-07-27 18:09:24.028  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json was hello-controller
+2018-07-27 18:09:24.028  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json was hello-controller
+2018-07-27 18:09:24.029  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json was hello-controller
+2018-07-27 18:09:24.030  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json was hello-controller
+2018-07-27 18:09:24.030  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json was hello-controller
+2018-07-27 18:09:24.031  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json was hello-controller
+2018-07-27 18:09:24.031  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json was hello-controller
+2018-07-27 18:09:24.032  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json was hello-controller
+2018-07-27 18:09:24.032  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json was hello-controller
+2018-07-27 18:09:24.033  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json was hello-controller
+2018-07-27 18:09:24.033  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json was hello-controller
+2018-07-27 18:09:24.034  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-07-27 18:09:24.034  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-07-27 18:09:24.034  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-07-27 18:09:24.034  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-07-27 18:09:24.034  INFO 30668 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /json2.com.adcat.monitor.web.HelloController.json2.DefaultGenericTypeNamingStrategy
+2018-07-27 18:09:24.034  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /json2.com.adcat.monitor.web.HelloController.json2.DefaultGenericTypeNamingStrategy
+2018-07-27 18:09:24.035  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json2 was hello-controller
+2018-07-27 18:09:24.035  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json2 was hello-controller
+2018-07-27 18:09:24.036  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json2 was hello-controller
+2018-07-27 18:09:24.036  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json2 was hello-controller
+2018-07-27 18:09:24.037  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json2 was hello-controller
+2018-07-27 18:09:24.037  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json2 was hello-controller
+2018-07-27 18:09:24.037  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json2 was hello-controller
+2018-07-27 18:09:24.038  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json2 was hello-controller
+2018-07-27 18:09:24.038  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json2 was hello-controller
+2018-07-27 18:09:24.038  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json2 was hello-controller
+2018-07-27 18:09:24.039  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json2 was hello-controller
+2018-07-27 18:09:24.039  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json2 was hello-controller
+2018-07-27 18:09:24.040  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json2 was hello-controller
+2018-07-27 18:09:24.040  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json2 was hello-controller
+2018-07-27 18:09:24.040  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json2 was hello-controller
+2018-07-27 18:09:24.041  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method json2 was hello-controller
+2018-07-27 18:09:24.053  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-07-27 18:09:24.053  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-07-27 18:09:24.053  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-07-27 18:09:24.053  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-07-27 18:09:24.053  INFO 30668 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /users/{id}.com.adcat.monitor.web.UserControllerTest.deleteUser.DefaultGenericTypeNamingStrategy
+2018-07-27 18:09:24.053  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /users/{id}.com.adcat.monitor.web.UserControllerTest.deleteUser.DefaultGenericTypeNamingStrategy
+2018-07-27 18:09:24.055  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteUser was user-controller-test
+2018-07-27 18:09:24.057  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method deleteUser was user-controller-test
+2018-07-27 18:09:24.059  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.adcat.monitor.domain.UserTest(true)
+2018-07-27 18:09:24.059  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.adcat.monitor.domain.UserTest(true)
+2018-07-27 18:09:24.060  INFO 30668 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.adcat.monitor.domain.UserTest(true)
+2018-07-27 18:09:24.060  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.adcat.monitor.domain.UserTest(true)
+2018-07-27 18:09:24.092  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.adcat.monitor.domain.UserTest(true)
+2018-07-27 18:09:24.092  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.adcat.monitor.domain.UserTest(true)
+2018-07-27 18:09:24.093  INFO 30668 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.adcat.monitor.domain.UserTest(true)
+2018-07-27 18:09:24.093  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.adcat.monitor.domain.UserTest(true)
+2018-07-27 18:09:24.093  INFO 30668 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /users/{id}.com.adcat.monitor.web.UserControllerTest.getUser.DefaultGenericTypeNamingStrategy
+2018-07-27 18:09:24.093  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /users/{id}.com.adcat.monitor.web.UserControllerTest.getUser.DefaultGenericTypeNamingStrategy
+2018-07-27 18:09:24.094  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller-test
+2018-07-27 18:09:24.095  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was user-controller-test
+2018-07-27 18:09:24.096  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<com.adcat.monitor.domain.UserTest>(true)
+2018-07-27 18:09:24.097  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.List<com.adcat.monitor.domain.UserTest>(true)
+2018-07-27 18:09:24.097  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<com.adcat.monitor.domain.UserTest>(true)
+2018-07-27 18:09:24.097  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.List<com.adcat.monitor.domain.UserTest>(true)
+2018-07-27 18:09:24.097  INFO 30668 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.adcat.monitor.domain.UserTest(true)
+2018-07-27 18:09:24.097  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.adcat.monitor.domain.UserTest(true)
+2018-07-27 18:09:24.097  INFO 30668 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: java.util.List<com.adcat.monitor.domain.UserTest>(true)
+2018-07-27 18:09:24.097  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key java.util.List<com.adcat.monitor.domain.UserTest>(true)
+2018-07-27 18:09:24.098  INFO 30668 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.adcat.monitor.domain.UserTest(true)
+2018-07-27 18:09:24.098  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.adcat.monitor.domain.UserTest(true)
+2018-07-27 18:09:24.098  INFO 30668 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /users/.com.adcat.monitor.web.UserControllerTest.getUserList.DefaultGenericTypeNamingStrategy
+2018-07-27 18:09:24.098  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /users/.com.adcat.monitor.web.UserControllerTest.getUserList.DefaultGenericTypeNamingStrategy
+2018-07-27 18:09:24.099  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUserList was user-controller-test
+2018-07-27 18:09:24.100  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUserList was user-controller-test
+2018-07-27 18:09:24.102  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.adcat.monitor.domain.UserTest(true)
+2018-07-27 18:09:24.102  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.adcat.monitor.domain.UserTest(true)
+2018-07-27 18:09:24.103  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.adcat.monitor.domain.UserTest(true)
+2018-07-27 18:09:24.107  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.adcat.monitor.domain.UserTest(true)
+2018-07-27 18:09:24.107  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-07-27 18:09:24.107  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-07-27 18:09:24.109  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-07-27 18:09:24.109  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-07-27 18:09:24.109  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.adcat.monitor.domain.UserTest(false)
+2018-07-27 18:09:24.109  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.adcat.monitor.domain.UserTest(false)
+2018-07-27 18:09:24.109  INFO 30668 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.adcat.monitor.domain.UserTest(false)
+2018-07-27 18:09:24.110  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.adcat.monitor.domain.UserTest(false)
+2018-07-27 18:09:24.113  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.adcat.monitor.domain.UserTest(false)
+2018-07-27 18:09:24.113  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.adcat.monitor.domain.UserTest(false)
+2018-07-27 18:09:24.113  INFO 30668 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.adcat.monitor.domain.UserTest(false)
+2018-07-27 18:09:24.113  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.adcat.monitor.domain.UserTest(false)
+2018-07-27 18:09:24.114  INFO 30668 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /users/.com.adcat.monitor.web.UserControllerTest.postUser.DefaultGenericTypeNamingStrategy
+2018-07-27 18:09:24.115  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /users/.com.adcat.monitor.web.UserControllerTest.postUser.DefaultGenericTypeNamingStrategy
+2018-07-27 18:09:24.116  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method postUser was user-controller-test
+2018-07-27 18:09:24.117  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method postUser was user-controller-test
+2018-07-27 18:09:24.120  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-07-27 18:09:24.121  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.lang.String(true)
+2018-07-27 18:09:24.121  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.lang.String(true)
+2018-07-27 18:09:24.121  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.lang.String(true)
+2018-07-27 18:09:24.122  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.adcat.monitor.domain.UserTest(false)
+2018-07-27 18:09:24.122  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.adcat.monitor.domain.UserTest(false)
+2018-07-27 18:09:24.122  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.adcat.monitor.domain.UserTest(false)
+2018-07-27 18:09:24.123  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.adcat.monitor.domain.UserTest(false)
+2018-07-27 18:09:24.123  INFO 30668 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /users/{id}.com.adcat.monitor.web.UserControllerTest.putUser.DefaultGenericTypeNamingStrategy
+2018-07-27 18:09:24.123  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /users/{id}.com.adcat.monitor.web.UserControllerTest.putUser.DefaultGenericTypeNamingStrategy
+2018-07-27 18:09:24.127  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method putUser was user-controller-test
+2018-07-27 18:09:24.133  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method putUser was user-controller-test
+2018-07-27 18:09:24.136  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.adcat.monitor.domain.User(true)
+2018-07-27 18:09:24.137  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.adcat.monitor.domain.User(true)
+2018-07-27 18:09:24.137  INFO 30668 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.adcat.monitor.domain.User(true)
+2018-07-27 18:09:24.137  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.adcat.monitor.domain.User(true)
+2018-07-27 18:09:24.152  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.adcat.monitor.domain.User(true)
+2018-07-27 18:09:24.152  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.adcat.monitor.domain.User(true)
+2018-07-27 18:09:24.152  INFO 30668 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.adcat.monitor.domain.User(true)
+2018-07-27 18:09:24.153  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.adcat.monitor.domain.User(true)
+2018-07-27 18:09:24.153  INFO 30668 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /v1/user/{id}.com.adcat.monitor.web.UserController.getUser.DefaultGenericTypeNamingStrategy
+2018-07-27 18:09:24.153  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /v1/user/{id}.com.adcat.monitor.web.UserController.getUser.DefaultGenericTypeNamingStrategy
+2018-07-27 18:09:24.155  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was 个人
+2018-07-27 18:09:24.156  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getUser was 个人
+2018-07-27 18:09:24.156  INFO 30668 --- [restartedMain] .d.s.w.r.o.CachingOperationNameGenerator : Generating unique operation named: getUserUsingGET_1
+2018-07-27 18:09:24.157  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.adcat.monitor.domain.User(true)
+2018-07-27 18:09:24.157  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.adcat.monitor.domain.User(true)
+2018-07-27 18:09:24.157  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.adcat.monitor.domain.User(true)
+2018-07-27 18:09:24.157  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.adcat.monitor.domain.User(true)
+2018-07-27 18:09:24.157  INFO 30668 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /v1/user.com.adcat.monitor.web.UserController.login.DefaultGenericTypeNamingStrategy
+2018-07-27 18:09:24.157  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /v1/user.com.adcat.monitor.web.UserController.login.DefaultGenericTypeNamingStrategy
+2018-07-27 18:09:24.171  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method login was 个人
+2018-07-27 18:09:24.175  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method login was 个人
+2018-07-27 18:09:24.180  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.adcat.monitor.domain.User(true)
+2018-07-27 18:09:24.180  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.adcat.monitor.domain.User(true)
+2018-07-27 18:09:24.180  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.adcat.monitor.domain.User(true)
+2018-07-27 18:09:24.180  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.adcat.monitor.domain.User(true)
+2018-07-27 18:09:24.180  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.adcat.monitor.domain.User(false)
+2018-07-27 18:09:24.180  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.adcat.monitor.domain.User(false)
+2018-07-27 18:09:24.180  INFO 30668 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.adcat.monitor.domain.User(false)
+2018-07-27 18:09:24.180  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.adcat.monitor.domain.User(false)
+2018-07-27 18:09:24.189  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.adcat.monitor.domain.User(false)
+2018-07-27 18:09:24.189  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.adcat.monitor.domain.User(false)
+2018-07-27 18:09:24.189  INFO 30668 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.adcat.monitor.domain.User(false)
+2018-07-27 18:09:24.189  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.adcat.monitor.domain.User(false)
+2018-07-27 18:09:24.189  INFO 30668 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /v1/user/{id}.com.adcat.monitor.web.UserController.update.DefaultGenericTypeNamingStrategy
+2018-07-27 18:09:24.189  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /v1/user/{id}.com.adcat.monitor.web.UserController.update.DefaultGenericTypeNamingStrategy
+2018-07-27 18:09:24.190  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method update was 个人
+2018-07-27 18:09:24.191  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method update was 个人
+2018-07-27 18:09:24.193  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<com.adcat.monitor.domain.Media>(true)
+2018-07-27 18:09:24.193  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key java.util.List<com.adcat.monitor.domain.Media>(true)
+2018-07-27 18:09:24.193  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: java.util.List<com.adcat.monitor.domain.Media>(true)
+2018-07-27 18:09:24.193  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key java.util.List<com.adcat.monitor.domain.Media>(true)
+2018-07-27 18:09:24.194  INFO 30668 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.adcat.monitor.domain.Media(true)
+2018-07-27 18:09:24.194  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.adcat.monitor.domain.Media(true)
+2018-07-27 18:09:24.209  INFO 30668 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: java.util.List<com.adcat.monitor.domain.Media>(true)
+2018-07-27 18:09:24.209  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key java.util.List<com.adcat.monitor.domain.Media>(true)
+2018-07-27 18:09:24.210  INFO 30668 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.adcat.monitor.domain.Media(true)
+2018-07-27 18:09:24.210  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.adcat.monitor.domain.Media(true)
+2018-07-27 18:09:24.210  INFO 30668 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /media.com.adcat.monitor.web.MediaController.getAllMedia.DefaultGenericTypeNamingStrategy
+2018-07-27 18:09:24.210  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /media.com.adcat.monitor.web.MediaController.getAllMedia.DefaultGenericTypeNamingStrategy
+2018-07-27 18:09:24.212  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getAllMedia was 媒体
+2018-07-27 18:09:24.215  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getAllMedia was 媒体
+2018-07-27 18:09:24.218  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.adcat.monitor.domain.Media(true)
+2018-07-27 18:09:24.218  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache models with key com.adcat.monitor.domain.Media(true)
+2018-07-27 18:09:24.218  INFO 30668 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.adcat.monitor.domain.Media(true)
+2018-07-27 18:09:24.218  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.adcat.monitor.domain.Media(true)
+2018-07-27 18:09:24.218  INFO 30668 --- [restartedMain] s.d.schema.ModelContextKeyGenerator      : Cache Key Generated: com.adcat.monitor.domain.Media(true)
+2018-07-27 18:09:24.219  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelDependencies with key com.adcat.monitor.domain.Media(true)
+2018-07-27 18:09:24.219  INFO 30668 --- [restartedMain] s.d.s.p.ModelPropertiesKeyGenerator      : Cache key generated: com.adcat.monitor.domain.Media(true)
+2018-07-27 18:09:24.219  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache modelProperties with key com.adcat.monitor.domain.Media(true)
+2018-07-27 18:09:24.219  INFO 30668 --- [restartedMain] s.d.spring.web.OperationsKeyGenerator    : Cache key generated: /media/{id}.com.adcat.monitor.web.MediaController.getDetail.DefaultGenericTypeNamingStrategy
+2018-07-27 18:09:24.219  INFO 30668 --- [restartedMain] s.d.spring.web.caching.CachingAspect     : Caching aspect applied for cache operations with key /media/{id}.com.adcat.monitor.web.MediaController.getDetail.DefaultGenericTypeNamingStrategy
+2018-07-27 18:09:24.220  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getDetail was 媒体
+2018-07-27 18:09:24.220  INFO 30668 --- [restartedMain] s.w.ClassOrApiAnnotationResourceGrouping : Group for method getDetail was 媒体
+2018-07-27 18:09:24.265  INFO 30668 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2018-07-27 18:09:24.270  INFO 30668 --- [restartedMain] com.adcat.monitor.CatBackendApplication  : Started CatBackendApplication in 3.937 seconds (JVM running for 4.718)
+2018-07-27 18:09:29.908  INFO 30668 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-07-27 18:09:29.909  INFO 30668 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-07-27 18:09:29.927  INFO 30668 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-07-27 18:09:36.164  INFO 30668 --- [http-nio-8080-exec-7] com.adcat.monitor.aspect.WebLogAspect    : URL : http://localhost:8080/media
+2018-07-27 18:09:36.164  INFO 30668 --- [http-nio-8080-exec-7] com.adcat.monitor.aspect.WebLogAspect    : HTTP_METHOD : GET
+2018-07-27 18:09:36.164  INFO 30668 --- [http-nio-8080-exec-7] com.adcat.monitor.aspect.WebLogAspect    : IP : 0:0:0:0:0:0:0:1
+2018-07-27 18:09:36.165  INFO 30668 --- [http-nio-8080-exec-7] com.adcat.monitor.aspect.WebLogAspect    : CLASS_METHOD : com.adcat.monitor.web.MediaController.getAllMedia
+2018-07-27 18:09:36.165  INFO 30668 --- [http-nio-8080-exec-7] com.adcat.monitor.aspect.WebLogAspect    : ARGS : []
+2018-07-27 18:09:36.179  INFO 30668 --- [http-nio-8080-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2018-07-27 18:09:36.467  INFO 30668 --- [http-nio-8080-exec-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2018-07-27 18:09:36.508  INFO 30668 --- [http-nio-8080-exec-7] com.adcat.monitor.aspect.WebLogAspect    : RESPONSE : [com.adcat.monitor.domain.Media@1e513619, com.adcat.monitor.domain.Media@21a482d6, com.adcat.monitor.domain.Media@670ba3d5, com.adcat.monitor.domain.Media@3dbe998f, com.adcat.monitor.domain.Media@2ac891df, com.adcat.monitor.domain.Media@2f7f1462, com.adcat.monitor.domain.Media@15d00f53, com.adcat.monitor.domain.Media@5ceb8e87, com.adcat.monitor.domain.Media@32c3baac, com.adcat.monitor.domain.Media@65c87492]
+2018-07-27 18:09:36.508  INFO 30668 --- [http-nio-8080-exec-7] com.adcat.monitor.aspect.WebLogAspect    : SPEND TIME : 344 ms
+2018-07-27 18:10:04.565  INFO 30668 --- [http-nio-8080-exec-1] com.adcat.monitor.aspect.WebLogAspect    : URL : http://localhost:8080/media/%7Bid%7D
+2018-07-27 18:10:04.565  INFO 30668 --- [http-nio-8080-exec-1] com.adcat.monitor.aspect.WebLogAspect    : HTTP_METHOD : GET
+2018-07-27 18:10:04.565  INFO 30668 --- [http-nio-8080-exec-1] com.adcat.monitor.aspect.WebLogAspect    : IP : 0:0:0:0:0:0:0:1
+2018-07-27 18:10:04.565  INFO 30668 --- [http-nio-8080-exec-1] com.adcat.monitor.aspect.WebLogAspect    : CLASS_METHOD : com.adcat.monitor.web.MediaController.getDetail
+2018-07-27 18:10:04.565  INFO 30668 --- [http-nio-8080-exec-1] com.adcat.monitor.aspect.WebLogAspect    : ARGS : [7]
+2018-07-27 18:10:04.592  INFO 30668 --- [http-nio-8080-exec-1] com.adcat.monitor.aspect.WebLogAspect    : RESPONSE : com.adcat.monitor.domain.Media@279cf374
+2018-07-27 18:10:04.593  INFO 30668 --- [http-nio-8080-exec-1] com.adcat.monitor.aspect.WebLogAspect    : SPEND TIME : 28 ms
