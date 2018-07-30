@@ -31,4 +31,14 @@ public class MediaController {
     public Media getDetail(@RequestParam("id") long id) throws Exception {
         return mediaMapper.findById(id);
     }
+
+    @GetMapping(value = "/index")
+    public List<Media> getIndexMedia() throws Exception {
+        return mediaMapper.getIndexMedia();
+    }
+
+    @GetMapping(value = "/selected")
+    public List<Media> getSelectedMedia() throws Exception {
+        return mediaMapper.getSelectedMedia();
+    }
 }

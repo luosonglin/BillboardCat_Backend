@@ -14,4 +14,10 @@ public interface MediaMapper {
 
     @Select("SELECT * FROM bmct_mi_media WHERE id = #{id}")
     Media findById(@Param("id") Long id);
+
+    @Select("select * from bmct_mi_media where is_show =1")
+    List<Media> getIndexMedia(); //首页展示
+
+    @Select("select * from bmct_mi_media where is_paid = 1")
+    List<Media> getSelectedMedia();
 }
