@@ -50,7 +50,7 @@ public class UserController {
         return userMapper.findByPhone(phone);
     }
 
-    @PutMapping(value = "/{id}")
+    @PutMapping(value = "")
     public User update(@RequestBody User user) throws Exception {
         if (userMapper.isExist(user.getPhoneNum()) == null)
             throw new JsonException("该用户不存在");
