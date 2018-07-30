@@ -3,7 +3,7 @@ package com.adcat.monitor.domain;
 import java.util.Date;
 
 //table bmct_mi_rl
-public class MediaReport {
+public class ReportMedia {
 
     //报备id
     private  long reportId;
