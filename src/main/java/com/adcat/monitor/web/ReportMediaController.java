@@ -10,7 +10,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/reportMedia")
+@RequestMapping(value = "/${com.adcat.monitor.zhaopai.version}/reportMedia")
 @Valid
 @Api(value = "媒体报备")
 public class ReportMediaController {

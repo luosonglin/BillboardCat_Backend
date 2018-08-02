@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.validation.Valid;
 
 @RestController
-@RequestMapping(value = "/banner")
+@RequestMapping(value = "/${com.adcat.monitor.zhaopai.version}/banner")
 @Valid
 @Api(value = "Banner")
 public class BannerController {

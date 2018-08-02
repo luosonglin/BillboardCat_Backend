@@ -11,7 +11,7 @@ import javax.validation.Valid;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/searchMedia")
+@RequestMapping(value = "/${com.adcat.monitor.zhaopai.version}/searchMedia")
 @Api(value = "寻找媒体")
 @Valid
 public class SearchMediaController {
