@@ -38,4 +38,9 @@ public class MediaController {
     public List<Media> getSelectedMedia() throws Exception {
         return mediaMapper.getSelectedMedia();
     }
+
+    @GetMapping(value = "/query={wd}") //如用？，怎api报错，string的word无法转成long
+    public List<Media> getMediaByword(@PathVariable("wd") String wd) throws Exception {
+        return mediaMapper.getMediaByWord(wd);
+    }
 }
