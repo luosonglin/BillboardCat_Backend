@@ -25,6 +25,6 @@ public interface MediaMapper {
     // mybatis的like语句运用不同于mysql的
     // mysql：   select * from bmct_mi_media where name like '%#{word}%'
     // mybatis： select * from bmct_mi_media where name like CONCAT('%','${word}','%' )
-    @Select("select * from bmct_mi_media where name like CONCAT('%','${word}','%' ) ")
+    @Select("SELECT * FROM `bmct_mi_media` WHERE CONCAT(IFNULL(`name`,''),IFNULL(`location`,''),IFNULL(`style`,'')) like CONCAT('%','${word}','%' ) ")
     List<Media> getMediaByWord(@Param("word") String word);
 }
