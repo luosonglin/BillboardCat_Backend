@@ -7613,3 +7613,8 @@ java.sql.SQLException: Parameter index out of range (1 > number of parameters, w
 2018-08-04 18:55:39.859  INFO 36341 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
 2018-08-04 18:55:39.899  INFO 36341 --- [http-nio-8080-exec-1] com.adcat.monitor.aspect.WebLogAspect    : RESPONSE : [com.adcat.monitor.domain.Media@7f1817f5, com.adcat.monitor.domain.Media@f8bda0b]
 2018-08-04 18:55:39.899  INFO 36341 --- [http-nio-8080-exec-1] com.adcat.monitor.aspect.WebLogAspect    : SPEND TIME : 385 ms
+2018-08-04 18:57:39.106  INFO 36341 --- [Thread-19] ConfigServletWebServerApplicationContext : Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@42a5be01: startup date [Sat Aug 04 18:55:09 CST 2018]; root of context hierarchy
+2018-08-04 18:57:39.112  INFO 36341 --- [Thread-19] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2018-08-04 18:57:39.113  INFO 36341 --- [Thread-19] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+2018-08-04 18:57:39.115  INFO 36341 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2018-08-04 18:57:39.121  INFO 36341 --- [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

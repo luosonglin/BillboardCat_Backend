@@ -27,4 +27,8 @@ public interface MediaMapper {
     // mybatis： select * from bmct_mi_media where name like CONCAT('%','${word}','%' )
     @Select("SELECT * FROM `bmct_mi_media` WHERE CONCAT(IFNULL(`name`,''),IFNULL(`location`,''),IFNULL(`style`,'')) like CONCAT('%','${word}','%' ) ")
     List<Media> getMediaByWord(@Param("word") String word);
+
+
+    @Select("select * frombmct_mi_media where user_id = #{user_id}")
+    List<Media> getMyMedia(@Param("user_id") Long id);
 }

@@ -43,4 +43,9 @@ public class MediaController {
     public List<Media> getMediaByword(@PathVariable("wd") String wd) throws Exception {
         return mediaMapper.getMediaByWord(wd);
     }
+
+    @GetMapping(value = "/my/{user_id}")
+    public List<Media> getMyMedia(@PathVariable("user_id") long user_id) throws Exception {
+        return mediaMapper.getMyMedia(user_id);
+    }
 }
