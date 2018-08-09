@@ -1,6 +1,8 @@
 package com.adcat.monitor.web;
 
+import com.adcat.monitor.domain.Area;
 import com.adcat.monitor.domain.Media;
+import com.adcat.monitor.domain.Style;
 import com.adcat.monitor.mapper.MediaMapper;
 import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,12 +42,31 @@ public class MediaController {
     }
 
     @GetMapping(value = "/query={wd}") //如用？，怎api报错，string的word无法转成long
-    public List<Media> getMediaByword(@PathVariable("wd") String wd) throws Exception {
-        return mediaMapper.getMediaByWord(wd);
+    public List<Media> searchMediaByword(@PathVariable("wd") String wd) throws Exception {
+        return mediaMapper.searchMediaByword(wd);
     }
 
     @GetMapping(value = "/my/{user_id}")
     public List<Media> getMyMedia(@PathVariable("user_id") long user_id) throws Exception {
         return mediaMapper.getMyMedia(user_id);
     }
+
+    @GetMapping(value = "/area/{parent_id}")
+    public List<Area> getArea(@PathVariable("parent_id") long parent_id) throws Exception {
+        return mediaMapper.getArea(parent_id);
+    }
+
+    @GetMapping(value = "/style")
+    public List<Style> getStyle() {
+        return mediaMapper.getStyle();
+    }
+
+    @PostMapping(value = "")
+    public Media addMedia(@RequestBody Media media) throws Exception {
+        mediaMapper.insertMedia(media);
+
+        return mediaMapper.findById(media.getId());
+    }
 }
+
+
